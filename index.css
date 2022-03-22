@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1F2937
+
+}
+
+/* topside */
+#topside {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+
+
+#color{
+    height: 50px;
+    width: 60px;
+}
+
+#scheme-name{
+    border-radius: 6px;
+    min-width: 50vw;
+    height:50px;
+    background: #1F2937;
+    color: white;
+    text-indent: 10px;
+    font-size: 17px;
+    margin: 0 30px;
+    border: 1px solid white;
+    
+}
+
+
+#getscheme-button{
+    background: #3D4B60;
+    color: white;
+    border-style: none;
+    border-radius: 4px;
+}
+
+/* COlor pallet part */
+#color-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    
+}
+
+#colorpallet{
+    display: flex;
+    width: 99.5vw;
+    height: 70vh;
+
+}
+
+#colorpallet-codes{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+
+}
+
+
+
+#one-0,#one-1,#one-2,#one-3,#one-4{
+    width: 20vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#text-0,#text-1,#text-2,#text-3,#text-4{
+    width: 20vw;
+    height: 5vh;
+    color: lightgray;
+    position: relative;
+    top: 20px;
+}
+
+@media screen and (min-width: 600px){
+    html {
+        max-width: 700px !important; 
+        margin: auto;
+
+    }
+
+    
+    #topside{
+        max-width: 680px !important;
+        justify-content: space-between;
+    }
+    #scheme-name{
+        min-width: 400px ;
+  
+    }
+    #colorpallet{
+        max-width: 700px !important;
+        justify-content: inherit;
+    }
+    #colorpallet-codes{
+        max-width: 700px !important;
+    }
+} 
